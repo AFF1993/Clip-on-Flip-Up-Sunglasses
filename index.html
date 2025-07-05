@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-on Flip Up Sunglasses - Premium Eyewear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .gold-text {
+            background: linear-gradient(to right, #CFB53B, #F5E7A1, #CFB53B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .gold-border {
+            border: 1px solid rgba(207, 181, 59, 0.5);
+        }
+        
+        .gold-bg {
+            background: linear-gradient(135deg, rgba(207, 181, 59, 0.1) 0%, rgba(207, 181, 59, 0.05) 100%);
+        }
+        
+        .black-bg {
+            background-color: #111;
+        }
+        
+        .countdown-box {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+            box-shadow: 0 4px 15px rgba(207, 181, 59, 0.2);
+        }
+        
+        .countdown-number {
+            background: linear-gradient(135deg, #CFB53B 0%, #F5E7A1 50%, #CFB53B 100%);
+            color: #111;
+            font-weight: bold;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .feature-icon {
+            color: #CFB53B;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .promo-badge {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .price-slash {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-slash::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            right: 0;
+            height: 2px;
+            background: #ff0000;
+            transform: rotate(-15deg);
+        }
+        
+        .product-image {
+            transition: transform 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .floating-promo {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="black-bg py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold gold-text">LUXE OPTICS</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="text-gray-300 hover:text-white transition">Features</a>
+                <a href="#gallery" class="text-gray-300 hover:text-white transition">Gallery</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a>
+                <a href="#order" class="text-gray-300 hover:text-white transition">Order Now</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="w-full bg-black flex justify-center py-8 px-4">
+        <img src="https://cdn.orderonline.id/uploads/images_9526401751710696702.png" alt="Clip-on Flip Up Sunglasses" class="max-w-full h-auto object-contain">
+    </section>
+
+    <!-- Product Title & Description -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Clip-on Flip Up Sunglasses</h1>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                Introducing our premium Clip On Eyeglasses, the perfect combination of function, style and superior quality. These clip on eyeglasses are designed to provide optimal eye protection against harmful UV rays with Uv400 standard, while enhancing your visual experience with TAC polarized lenses. Whether you need prescription glasses or just want to elevate your fashion statement, our Clip On Eyeglasses are ready to do it.
+            </p>
+            <div class="flex justify-center">
+                <a href="#order" class="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition duration-300 shadow-lg hover:shadow-xl flex items-center">
+                    ORDER NOW <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 gold-bg">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Premium Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">LIGHTWEIGHT and HIDDEN</h3>
+                    <p class="text-gray-700">World's most compact & hidden clip on mount that flips up also! Made with specialized Magnesium Alloy, it's like wearing nothing at all! Easily turn your regular prescription glasses into premium prescription polarized sunglasses!</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">REDUCE EYE STRAIN / FATIGUE</h3>
+                    <p class="text-gray-700">Protect your eyes from harmful UV sun rays, glare and reflections with TAC Lenses that is Lightweight and Scratch-Resistant. Minimize Summer sunglare or even blinding snow in Winter!</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">POLARIZING Technology</h3>
+                    <p class="text-gray-700">These polarized lenses will enhance driving safety and overall vision by reducing reflections and glare on the road and from other cars. May also be used to reduce water reflection for fishing experience by letting you see through the water better.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">PROTECT Eyes from Harmful Rays</h3>
+                    <p class="text-gray-700">These UV400 Lenses absorbs over 99% of harmful UVA/UVB spectrums. They are designed to be DARK enough to allow you to comfortable see without squinting on SUNNY days.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-compress-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">COMPACT Flip-up Clip-on Mount</h3>
+                    <p class="text-gray-700">The shortened mounting clips provide enhanced comfort compared to longer designs. You can conveniently snap at mid and high positions when driving into a tunnel or when temporarily not requiring shades. Simply flick lenses up to lock into mid and high positions.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">FORWARD FACING 1-Handed Mounting</h3>
+                    <p class="text-gray-700">The 1-hand usage design allows for natural clipping action from the front. Provides safety and convenience so you can drive with one hand and clip on with the other.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Gallery -->
+    <section id="gallery" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Product Details</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_5252051751710696190.png" alt="Product Detail 1" class="w-full h-auto rounded-lg product-image mb-4">
+                    <p class="text-gray-700">Premium Magnesium Alloy frame for lightweight comfort</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_9246941751710695116.png" alt="Product Detail 2" class="w-full h-auto rounded-lg product-image mb-4">
+                    <p class="text-gray-700">Innovative flip-up mechanism for convenience</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_7318741751711276144.gif" alt="Product Detail 3" class="w-full h-auto rounded-lg product-image mb-4">
+                    <p class="text-gray-700">One-handed operation demonstration</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_7563261751710695066.png" alt="Product Detail 4" class="w-full h-auto rounded-lg product-image mb-4">
+                    <p class="text-gray-700">Compact design fits most prescription glasses</p>
+                </div>
+                <div class="text-center md:col-span-2">
+                    <img src="https://cdn.orderonline.id/uploads/images_2879281751710695614.png" alt="Product Detail 5" class="w-full h-auto rounded-lg product-image mb-4 max-w-2xl mx-auto">
+                    <p class="text-gray-700">Premium polarized TAC lenses with UV400 protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Variants -->
+    <section class="py-16 px-4 gold-bg">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Available Colors</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_6997621751710694702.png" alt="Color Variant 1" class="w-full h-auto rounded-lg product-image">
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_1370301751710695207.png" alt="Color Variant 2" class="w-full h-auto rounded-lg product-image">
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_4364901751710696291.png" alt="Color Variant 3" class="w-full h-auto rounded-lg product-image">
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_4424811751710695918.png" alt="Color Variant 4" class="w-full h-auto rounded-lg product-image">
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.orderonline.id/uploads/images_3176141751710749705.png" alt="Color Variant 5" class="w-full h-auto rounded-lg product-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">What Our Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-500 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Andi Wijaya</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Kualitasnya benar-benar premium! Saya sering berkendara jarak jauh dan kacamata ini sangat membantu mengurangi silau. Yang paling saya suka adalah bisa dipasang dengan satu tangan sambil menyetir."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-500 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Rina Dewi</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Saya pakai kacamata minus dan selalu kesulitan mencari sunglasses yang cocok. Clip-on ini solusi sempurna! Ringan dan tidak mengubah penampilan kacamata saya. Worth every penny!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-500 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Sebagai nelayan, polarized lensanya sangat membantu melihat ke dalam air. Flip-up mechanismenya praktis saat ada awan mendung. Pengiriman cepat dan packing aman."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Countdown -->
+    <section class="py-12 px-4 black-bg">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="countdown-box p-8 rounded-xl">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">PROMO SPESIAL HARI INI</h3>
+                <p class="text-gray-300 mb-6">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                
+                <div class="flex justify-center space-x-4 mb-8">
+                    <div class="countdown-number w-16 h-16 rounded-full flex items-center justify-center">
+                        <span id="hours" class="text-xl font-bold">00</span>
+                    </div>
+                    <div class="countdown-number w-16 h-16 rounded-full flex items-center justify-center">
+                        <span id="minutes" class="text-xl font-bold">00</span>
+                    </div>
+                    <div class="countdown-number w-16 h-16 rounded-full flex items-center justify-center">
+                        <span id="seconds" class="text-xl font-bold">00</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <div>
+                        <p class="text-gray-400 text-sm">HARGA NORMAL</p>
+                        <p class="text-xl line-through text-gray-400">Rp 299.000</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">HARGA PROMO</p>
+                        <p class="text-3xl font-bold gold-text">Rp 199.000</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">ANDA HEMAT</p>
+                        <p class="text-xl text-green-400 font-bold">Rp 100.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Notes -->
+    <section class="py-12 px-4 bg-gray-100">
+        <div class="container mx-auto max-w-4xl">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-center">Penting!</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-truck text-yellow-600 mt-1 mr-2"></i>
+                        <span>Pengiriman 2 - 4 Hari Setelah Pemesanan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-yellow-600 mt-1 mr-2"></i>
+                        <span>Mohon Isi Alamat Dengan Lengkap</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                        <span>100% Product Original</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <div class="promo-badge inline-block px-4 py-2 rounded-full text-white font-bold mb-4">
+                    LIMITED STOCK!
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Pesan Sekarang Juga!</h2>
+                <p class="text-lg text-gray-600">Isi form pemesanan di bawah ini dengan data yang benar</p>
+            </div>
+            
+            <div class="mb-8 flex justify-center">
+                <img src="https://cdn.orderonline.id/uploads/images_6097981751710749384.png" alt="Special Discount" class="max-w-full h-auto floating-promo">
+            </div>
+            
+            <!-- Order Form -->
+            <div class="bg-gray-50 p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="emma" data-product-slug="clip-on-flip-up-sunglasses" data-product-id="6868fb9867ac81c8d50fcb46" id="oo-embed-form-clip-on-flip-up-sunglasses-3112" data-origin="orderonline">
+                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="black-bg py-12 px-4 text-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gold-text">LUXE OPTICS</h3>
+                    <p class="text-gray-400">Premium eyewear for the discerning customer. Quality and style that stands the test of time.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimonials</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-white transition">Order Now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i> support@luxeoptics.com
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i> +62 21 1234 5678
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i> Jakarta, Indonesia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 LUXE OPTICS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // OrderOnline Embed Script
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://emma.orderonline.id');
+            ooe('init', '5f16831a9d8e8e4fb67472e5', '6868fb9867ac81c8d50fcb46', '6868fb9867ac81c8d50fcb47', 'oo-embed-form-clip-on-flip-up-sunglasses-3112', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+    </script>
+</body>
+</html>
